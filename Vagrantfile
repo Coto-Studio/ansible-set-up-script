@@ -25,7 +25,10 @@ Vagrant.configure("2") do |config|
 
       vms.vm.network "private_network", ip: box[:ip]
 
-      vms.vm.provision "shell", path: "set-up.sh"
+      vms.vm.provision :shell do |shell|
+        shell.path = "set-up.sh"
+        shell.privileged  = false
+      end
     end
   end
 end
