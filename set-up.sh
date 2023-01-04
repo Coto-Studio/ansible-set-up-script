@@ -13,9 +13,13 @@ fi
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK40CjVSstXJ/r9ulgHcRGQkV6/MBmOPxOufq076KMOx" >> ~/.ssh/authorized_keys
 echo "Network key add."
 
-# Install Xcode command line tools if running on macos 
+# Run macos commands
 if [[ $OSTYPE == 'darwin'* ]]; then
   sudo xcode-select --install
+  ifconfig -a
 fi
 
-# Print out ip and username info
+# Run linux commands
+if [[ $OSTYPE == 'linux'* ]]; then
+  hostname -I
+fi
