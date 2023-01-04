@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to set up a new computer so that if can configured by ansible.
+# Script to set up a new computer so that it can configured by Ansible.
 # To run this script type
 # /bin/bash -c "$(curl -fsSL https://lnk.coto.studio/setup)"
 
