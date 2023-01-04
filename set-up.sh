@@ -12,9 +12,9 @@ if [ ! -f ~/.ssh/id_ed2551 ]; then
 fi
 
 # Add network key to authorized_keys
-echo "2) Add network ssh key"
+echo "2) Add ansible ssh key"
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK40CjVSstXJ/r9ulgHcRGQkV6/MBmOPxOufq076KMOx" >> ~/.ssh/authorized_keys
-echo "Network key add."
+echo "Ansible key add."
 
 # Run macos commands
 if [[ $OSTYPE == 'darwin'* ]]; then
