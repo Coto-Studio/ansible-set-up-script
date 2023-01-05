@@ -7,8 +7,8 @@
 
 echo "1) Runing ssh-keygen"
 echo "*****************\n"
-if [ ! -f ~/.ssh/id_ed2551 ]; then
-  ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed2551
+if [ ! -f ~/.ssh/id_ed25519 ]; then
+  ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
   echo "SSH key created."
 else
   echo "Skipped..."
